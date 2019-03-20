@@ -1,0 +1,53 @@
+---
+title: "GDAT 510 - Assigment One"
+author: "Chip Galusha"
+date: "3/19/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r libraries}
+# these are the required packages to run the rmd
+required.packages <- c("mgcv", "tidyverse", "prophet", "forecast")
+
+# This will check if any of the reuired packages are not installed and install them.
+if(!all(required.packages %in% installed.packages())){
+  
+  # packages that are NOT installed that are required to run document
+  missing.packages <- setdiff(required.packages, installed.packages())
+  
+  install.packages(missing.packages)
+  
+  } else{
+  
+    print("You have all the required packages. Proceeded.")
+  
+  }
+
+library(mgcv)
+library(tidyverse)
+library(forecast)
+library(prophet)
+ 
+
+```
+
+# GDAT 510 -  Assigment One
+#### Chip Galusha
+
+## Introduction
+
+The _______ data set comes with the _____ package. 
+
+```{r}
+
+```
+
+## Visualize The Data
+
+
+## Possible Applications
+
